@@ -1,0 +1,321 @@
+{
+  "packName": "zedluxe_batch1_asset_pack_ig_based",
+  "status": "corrected",
+  "pagesCovered": [
+    "shop-all",
+    "collection",
+    "product-detail",
+    "cart"
+  ],
+  "strategy": {
+    "primary": "instagram-source assets",
+    "secondary": "generated-support wide assets",
+    "uiTextRule": "Render all UI text in code; do not bake into the site UI."
+  },
+  "assets": [
+    {
+      "file": "assets/batch-1/shop/blue_logo_tee_model.jpg",
+      "pageSection": "shop",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/blue_logo_tee_model.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/shop/black_logo_tee_model.jpg",
+      "pageSection": "shop",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/black_logo_tee_model.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/shop/blue_lost_tee_back.jpg",
+      "pageSection": "shop",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/blue_lost_tee_back.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/shop/red_set_models.jpg",
+      "pageSection": "shop",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/red_set_models.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/shop/black_cap_product.jpg",
+      "pageSection": "shop",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/black_cap_product.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/shop/floral_satin_jacket_product.jpg",
+      "pageSection": "shop",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/floral_satin_jacket_product.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/shop/bucket_hat_product.jpg",
+      "pageSection": "shop",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/bucket_hat_product.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/shop/beige_tracksuit_model.jpg",
+      "pageSection": "shop",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/beige_tracksuit_model.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/shop/white_tee_living_room.jpg",
+      "pageSection": "shop",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/white_tee_living_room.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/shop/studio_white_black_pair.jpg",
+      "pageSection": "shop",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/studio_white_black_pair.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/collection/floral_satin_jacket_product.jpg",
+      "pageSection": "collection",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/floral_satin_jacket_product.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/collection/striped_jacket_back.jpg",
+      "pageSection": "collection",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/striped_jacket_back.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/collection/black_satin_shirt_detail.jpg",
+      "pageSection": "collection",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/black_satin_shirt_detail.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/collection/purple_black_sweatshirt_model.jpg",
+      "pageSection": "collection",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/purple_black_sweatshirt_model.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/collection/patterned_green_top_front.jpg",
+      "pageSection": "collection",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/patterned_green_top_front.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/collection/patterned_green_top_back.jpg",
+      "pageSection": "collection",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/patterned_green_top_back.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/collection/green_white_polo_model.jpg",
+      "pageSection": "collection",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/green_white_polo_model.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/collection/rugby_47_jersey_product.jpg",
+      "pageSection": "collection",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/rugby_47_jersey_product.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/product/brown_logo_tee_close_lifestyle.jpg",
+      "pageSection": "product",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/brown_logo_tee_close_lifestyle.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/product/black_logo_tee_model.jpg",
+      "pageSection": "product",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/black_logo_tee_model.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/product/white_tee_back_laptop.jpg",
+      "pageSection": "product",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/white_tee_back_laptop.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/product/blue_lost_tee_back.jpg",
+      "pageSection": "product",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/blue_lost_tee_back.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/product/beige_tracksuit_closeup.jpg",
+      "pageSection": "product",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/beige_tracksuit_closeup.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/product/black_satin_shirt_detail.jpg",
+      "pageSection": "product",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/black_satin_shirt_detail.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/cart/blue_lost_tee_back.jpg",
+      "pageSection": "cart",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/blue_lost_tee_back.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/cart/black_cap_product.jpg",
+      "pageSection": "cart",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/black_cap_product.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/cart/floral_satin_jacket_product.jpg",
+      "pageSection": "cart",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/floral_satin_jacket_product.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/cart/bucket_hat_product.jpg",
+      "pageSection": "cart",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/bucket_hat_product.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/cart/rugby_47_jersey_product.jpg",
+      "pageSection": "cart",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/rugby_47_jersey_product.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/cart/red_cap_product.jpg",
+      "pageSection": "cart",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/red_cap_product.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/cart/black_47_sweater_model.jpg",
+      "pageSection": "cart",
+      "type": "instagram-source",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/black_47_sweater_model.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype and build placement; replace with original product/lifestyle photo if available."
+    },
+    {
+      "file": "assets/batch-1/shop/shop-hero-wide.png",
+      "pageSection": "shop",
+      "type": "generated-support",
+      "source": "/mnt/data/ghostwriter_images/generated/a_cinematic_urban_fashion_street_photoshoot_in_a_1_batch_1.png",
+      "productionReady": true,
+      "notes": "Generated wide support asset designed to match the approved dark luxury ZEDLUXE website style. Use for hero/banner/editorial support only."
+    },
+    {
+      "file": "assets/batch-1/shop/shop-featured-campaign-wide.png",
+      "pageSection": "shop",
+      "type": "generated-support",
+      "source": "/mnt/data/ghostwriter_images/generated/a_high_end_fashion_editorial_scene_in_a_dark_mood_2_batch_2.png",
+      "productionReady": true,
+      "notes": "Generated wide support asset designed to match the approved dark luxury ZEDLUXE website style. Use for hero/banner/editorial support only."
+    },
+    {
+      "file": "assets/batch-1/collection/outerwear-hero-wide.png",
+      "pageSection": "collection",
+      "type": "generated-support",
+      "source": "/mnt/data/ghostwriter_images/generated/a_cinematic_fashion_editorial_product_shoot_scen_3_batch_3.png",
+      "productionReady": true,
+      "notes": "Generated wide support asset designed to match the approved dark luxury ZEDLUXE website style. Use for hero/banner/editorial support only."
+    },
+    {
+      "file": "assets/batch-1/collection/lookbook-layered-different-wide.png",
+      "pageSection": "collection",
+      "type": "generated-support",
+      "source": "/mnt/data/ghostwriter_images/generated/wide_cinematic_fashion_editorial_scene_in_a_dark_u_4_batch_4.png",
+      "productionReady": true,
+      "notes": "Generated wide support asset designed to match the approved dark luxury ZEDLUXE website style. Use for hero/banner/editorial support only."
+    },
+    {
+      "file": "assets/batch-1/collection/built-different-banner-wide.png",
+      "pageSection": "collection",
+      "type": "generated-support",
+      "source": "/mnt/data/ghostwriter_images/generated/a_wide_cinematic_urban_fashion_portrait_scene_a_5_batch_5.png",
+      "productionReady": true,
+      "notes": "Generated wide support asset designed to match the approved dark luxury ZEDLUXE website style. Use for hero/banner/editorial support only."
+    },
+    {
+      "file": "assets/batch-1/product/pdp-campaign-rooted-culture-wide.png",
+      "pageSection": "product",
+      "type": "generated-support",
+      "source": "/mnt/data/ghostwriter_images/generated/a_wide_cinematic_fashion_collage_advertorial_style_6_batch_6.png",
+      "productionReady": true,
+      "notes": "Generated wide support asset designed to match the approved dark luxury ZEDLUXE website style. Use for hero/banner/editorial support only."
+    },
+    {
+      "file": "assets/batch-1/cart/cart-support-banner-wide.png",
+      "pageSection": "cart",
+      "type": "generated-support",
+      "source": "/mnt/data/ghostwriter_images/generated/a_wide_studio_styled_still_life_product_flat_la_7_batch_7.png",
+      "productionReady": true,
+      "notes": "Generated wide support asset designed to match the approved dark luxury ZEDLUXE website style. Use for hero/banner/editorial support only."
+    }
+  ]
+}

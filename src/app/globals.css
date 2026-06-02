@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/*
+  ZEDLUXE ORIGINALS — Dark luxury minimal streetwear design system.
+  Tokens mirror 01_design_docs/design.md. Tailwind v4 exposes every value in
+  @theme as a utility (e.g. bg-ink, text-muted, font-serif, tracking-nav).
+*/
+
+@theme {
+  /* Palette */
+  --color-black: #050505;
+  --color-ink: #0b0b0b;
+  --color-charcoal: #111111;
+  --color-charcoal-2: #181818;
+  --color-line: #2a2a2a;
+  --color-white: #ffffff;
+  --color-off-white: #f3f1ec;
+  --color-muted: #a

@@ -1,0 +1,413 @@
+{
+  "packName": "zedluxe_batch2_asset_pack_ig_based",
+  "status": "corrected",
+  "pagesCovered": [
+    "about",
+    "lookbook",
+    "contact",
+    "faq"
+  ],
+  "strategy": {
+    "primary": "instagram-source assets from user-provided screenshots",
+    "secondary": "ig-based wide composites for hero/banner sections",
+    "uiTextRule": "Render all UI text in code; do not bake into images."
+  },
+  "assets": [
+    {
+      "file": "assets/batch-2/about/red_car_group_lifestyle.jpg",
+      "pageSection": "about",
+      "type": "instagram-source",
+      "purpose": "About community/lifestyle section",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/red_car_group_lifestyle.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/about/white_tee_duo_street.jpg",
+      "pageSection": "about",
+      "type": "instagram-source",
+      "purpose": "About community and brand story section",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/white_tee_duo_street.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/about/city_stop_sign_lifestyle.jpg",
+      "pageSection": "about",
+      "type": "instagram-source",
+      "purpose": "About journey/community section",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/city_stop_sign_lifestyle.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/about/brown_logo_tee_close_lifestyle.jpg",
+      "pageSection": "about",
+      "type": "instagram-source",
+      "purpose": "About quality/brand detail section",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/brown_logo_tee_close_lifestyle.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/about/patterned_green_top_stairs.jpg",
+      "pageSection": "about",
+      "type": "instagram-source",
+      "purpose": "About style/culture image",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/patterned_green_top_stairs.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/about/black_white_logo_pair.jpg",
+      "pageSection": "about",
+      "type": "instagram-source",
+      "purpose": "About brand visual support",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/black_white_logo_pair.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/lookbook/red_set_models.jpg",
+      "pageSection": "lookbook",
+      "type": "instagram-source",
+      "purpose": "Lookbook editorial card/gallery",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/red_set_models.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/lookbook/beige_tracksuit_model.jpg",
+      "pageSection": "lookbook",
+      "type": "instagram-source",
+      "purpose": "Lookbook editorial card/gallery",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/beige_tracksuit_model.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/lookbook/black_top_red_pants_plane.jpg",
+      "pageSection": "lookbook",
+      "type": "instagram-source",
+      "purpose": "Lookbook editorial card/gallery",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/black_top_red_pants_plane.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/lookbook/green_white_polo_model.jpg",
+      "pageSection": "lookbook",
+      "type": "instagram-source",
+      "purpose": "Lookbook editorial card/gallery",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/green_white_polo_model.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/lookbook/striped_jacket_back.jpg",
+      "pageSection": "lookbook",
+      "type": "instagram-source",
+      "purpose": "Lookbook outerwear/editorial image",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/striped_jacket_back.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/lookbook/purple_black_sweatshirt_model.jpg",
+      "pageSection": "lookbook",
+      "type": "instagram-source",
+      "purpose": "Lookbook editorial image",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/purple_black_sweatshirt_model.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/lookbook/white_tee_skateboard.jpg",
+      "pageSection": "lookbook",
+      "type": "instagram-source",
+      "purpose": "Lookbook lifestyle image",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/white_tee_skateboard.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/lookbook/all_white_outfit_model.jpg",
+      "pageSection": "lookbook",
+      "type": "instagram-source",
+      "purpose": "Lookbook lifestyle image",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/all_white_outfit_model.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/lookbook/red_car_group_lifestyle.jpg",
+      "pageSection": "lookbook",
+      "type": "instagram-source",
+      "purpose": "Lookbook community/lifestyle image",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/red_car_group_lifestyle.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/lookbook/white_tee_car_duo.jpg",
+      "pageSection": "lookbook",
+      "type": "instagram-source",
+      "purpose": "Lookbook community/lifestyle image",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/white_tee_car_duo.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/lookbook/blue_lost_tee_back.jpg",
+      "pageSection": "lookbook",
+      "type": "instagram-source",
+      "purpose": "Lookbook product/lifestyle image",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/blue_lost_tee_back.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/lookbook/cream_tee_duo_balcony.jpg",
+      "pageSection": "lookbook",
+      "type": "instagram-source",
+      "purpose": "Lookbook duo styling image",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/cream_tee_duo_balcony.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/contact/brown_logo_tee_close_lifestyle.jpg",
+      "pageSection": "contact",
+      "type": "instagram-source",
+      "purpose": "Contact hero/support visual",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/brown_logo_tee_close_lifestyle.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/contact/floral_satin_jacket_product.jpg",
+      "pageSection": "contact",
+      "type": "instagram-source",
+      "purpose": "Contact newsletter/support banner visual",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/floral_satin_jacket_product.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/contact/red_car_group_lifestyle.jpg",
+      "pageSection": "contact",
+      "type": "instagram-source",
+      "purpose": "Contact community/brand support visual",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/red_car_group_lifestyle.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/contact/black_cap_product.jpg",
+      "pageSection": "contact",
+      "type": "instagram-source",
+      "purpose": "Contact product/accessory support visual",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/black_cap_product.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/faq/black_logo_tee_model.jpg",
+      "pageSection": "faq",
+      "type": "instagram-source",
+      "purpose": "FAQ hero/support visual",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/black_logo_tee_model.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/faq/brown_logo_tee_close_lifestyle.jpg",
+      "pageSection": "faq",
+      "type": "instagram-source",
+      "purpose": "FAQ hero/support visual",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/brown_logo_tee_close_lifestyle.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/faq/white_tee_seated_model.jpg",
+      "pageSection": "faq",
+      "type": "instagram-source",
+      "purpose": "FAQ support visual",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/white_tee_seated_model.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/faq/black_47_sweater_model.jpg",
+      "pageSection": "faq",
+      "type": "instagram-source",
+      "purpose": "FAQ support visual",
+      "source": "zedluxe_instagram_source_library/curated_web_refs/black_47_sweater_model.jpg",
+      "productionReady": false,
+      "notes": "Upscaled crop from user-supplied Instagram screenshots. Good for prototype/build placement; replace with original high-res media if available."
+    },
+    {
+      "file": "assets/batch-2/about/about-hero-wide.jpg",
+      "pageSection": "about",
+      "type": "ig-based-wide-composite",
+      "purpose": "About page wide hero image",
+      "source": [
+        "curated_web_refs/floral_satin_jacket_product.jpg",
+        "curated_web_refs/red_car_group_lifestyle.jpg",
+        "curated_web_refs/white_tee_duo_street.jpg"
+      ],
+      "productionReady": false,
+      "notes": "Wide support image composed from Instagram-derived source crops with dark overlay. No UI text embedded. Replace with original campaign/hero photography when available."
+    },
+    {
+      "file": "assets/batch-2/about/manifesto-founder-bg-wide.jpg",
+      "pageSection": "about",
+      "type": "ig-based-wide-composite",
+      "purpose": "About manifesto/founder background",
+      "source": [
+        "curated_web_refs/brown_logo_tee_close_lifestyle.jpg",
+        "curated_web_refs/black_logo_tee_model.jpg",
+        "curated_web_refs/black_white_logo_pair.jpg"
+      ],
+      "productionReady": false,
+      "notes": "Wide support image composed from Instagram-derived source crops with dark overlay. No UI text embedded. Replace with original campaign/hero photography when available."
+    },
+    {
+      "file": "assets/batch-2/about/community-movement-wide.jpg",
+      "pageSection": "about",
+      "type": "ig-based-wide-composite",
+      "purpose": "About community movement wide image",
+      "source": [
+        "curated_web_refs/red_car_group_lifestyle.jpg",
+        "curated_web_refs/white_tee_duo_street.jpg",
+        "curated_web_refs/white_tee_car_duo.jpg",
+        "curated_web_refs/city_stop_sign_lifestyle.jpg"
+      ],
+      "productionReady": false,
+      "notes": "Wide support image composed from Instagram-derived source crops with dark overlay. No UI text embedded. Replace with original campaign/hero photography when available."
+    },
+    {
+      "file": "assets/batch-2/lookbook/lookbook-hero-wide.jpg",
+      "pageSection": "lookbook",
+      "type": "ig-based-wide-composite",
+      "purpose": "Lookbook wide hero image",
+      "source": [
+        "curated_web_refs/striped_jacket_back.jpg",
+        "curated_web_refs/red_set_models.jpg",
+        "curated_web_refs/beige_tracksuit_model.jpg"
+      ],
+      "productionReady": false,
+      "notes": "Wide support image composed from Instagram-derived source crops with dark overlay. No UI text embedded. Replace with original campaign/hero photography when available."
+    },
+    {
+      "file": "assets/batch-2/lookbook/featured-campaign-film-wide.jpg",
+      "pageSection": "lookbook",
+      "type": "ig-based-wide-composite",
+      "purpose": "Lookbook featured campaign film/banner visual",
+      "source": [
+        "curated_web_refs/floral_satin_jacket_product.jpg",
+        "curated_web_refs/black_top_red_pants_plane.jpg",
+        "curated_web_refs/green_white_polo_model.jpg"
+      ],
+      "productionReady": false,
+      "notes": "Wide support image composed from Instagram-derived source crops with dark overlay. No UI text embedded. Replace with original campaign/hero photography when available."
+    },
+    {
+      "file": "assets/batch-2/lookbook/lookbook-community-wide.jpg",
+      "pageSection": "lookbook",
+      "type": "ig-based-wide-composite",
+      "purpose": "Lookbook community wide strip",
+      "source": [
+        "curated_web_refs/white_tee_skateboard.jpg",
+        "curated_web_refs/red_car_group_lifestyle.jpg",
+        "curated_web_refs/all_white_outfit_model.jpg",
+        "curated_web_refs/white_tee_car_duo.jpg"
+      ],
+      "productionReady": false,
+      "notes": "Wide support image composed from Instagram-derived source crops with dark overlay. No UI text embedded. Replace with original campaign/hero photography when available."
+    },
+    {
+      "file": "assets/batch-2/contact/contact-hero-wide.jpg",
+      "pageSection": "contact",
+      "type": "ig-based-wide-composite",
+      "purpose": "Contact page wide hero image",
+      "source": [
+        "curated_web_refs/brown_logo_tee_close_lifestyle.jpg",
+        "curated_web_refs/red_car_group_lifestyle.jpg",
+        "curated_web_refs/floral_satin_jacket_product.jpg"
+      ],
+      "productionReady": false,
+      "notes": "Wide support image composed from Instagram-derived source crops with dark overlay. No UI text embedded. Replace with original campaign/hero photography when available."
+    },
+    {
+      "file": "assets/batch-2/contact/contact-newsletter-banner-wide.jpg",
+      "pageSection": "contact",
+      "type": "ig-based-wide-composite",
+      "purpose": "Contact newsletter/stay connected banner",
+      "source": [
+        "curated_web_refs/floral_satin_jacket_product.jpg",
+        "curated_web_refs/black_cap_product.jpg",
+        "curated_web_refs/bucket_hat_product.jpg"
+      ],
+      "productionReady": false,
+      "notes": "Wide support image composed from Instagram-derived source crops with dark overlay. No UI text embedded. Replace with original campaign/hero photography when available."
+    },
+    {
+      "file": "assets/batch-2/contact/store-interior-dark-placeholder.jpg",
+      "pageSection": "contact",
+      "type": "ig-based-wide-composite",
+      "purpose": "Dark retail/store atmosphere placeholder made from product visuals",
+      "source": [
+        "curated_web_refs/black_cap_product.jpg",
+        "curated_web_refs/bucket_hat_product.jpg",
+        "curated_web_refs/floral_satin_jacket_product.jpg"
+      ],
+      "productionReady": false,
+      "notes": "Wide support image composed from Instagram-derived source crops with dark overlay. No UI text embedded. Replace with original campaign/hero photography when available."
+    },
+    {
+      "file": "assets/batch-2/faq/faq-hero-wide.jpg",
+      "pageSection": "faq",
+      "type": "ig-based-wide-composite",
+      "purpose": "FAQ page wide hero image",
+      "source": [
+        "curated_web_refs/black_logo_tee_model.jpg",
+        "curated_web_refs/brown_logo_tee_close_lifestyle.jpg"
+      ],
+      "productionReady": false,
+      "notes": "Wide support image composed from Instagram-derived source crops with dark overlay. No UI text embedded. Replace with original campaign/hero photography when available."
+    },
+    {
+      "file": "assets/batch-2/faq/faq-newsletter-bg.jpg",
+      "pageSection": "faq",
+      "type": "ig-based-wide-composite",
+      "purpose": "FAQ newsletter background visual",
+      "source": [
+        "curated_web_refs/black_47_sweater_model.jpg",
+        "curated_web_refs/white_tee_seated_model.jpg",
+        "curated_web_refs/brown_logo_tee_close_lifestyle.jpg"
+      ],
+      "productionReady": false,
+      "notes": "Wide support image composed from Instagram-derived source crops with dark overlay. No UI text embedded. Replace with original campaign/hero photography when available."
+    },
+    {
+      "file": "assets/batch-2/contact/support-icons.svg",
+      "pageSection": "contact",
+      "type": "svg-icon-support",
+      "purpose": "Contact support icon set",
+      "source": "Created as simple inline SVG support asset",
+      "productionReady": true,
+      "notes": "Thin line SVG support icon set. Can be replaced by preferred icon library."
+    },
+    {
+      "file": "assets/batch-2/faq/faq-category-icons.svg",
+      "pageSection": "faq",
+      "type": "svg-icon-support",
+      "purpose": "FAQ category icon set",
+      "source": "Created as simple inline SVG support asset",
+      "productionReady": true,
+      "notes": "Thin line SVG support icon set. Can be replaced by preferred icon library."
+    }
+  ]
+}
