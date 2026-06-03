@@ -45,3 +45,7 @@ _source-images/
 
 # local dev log
 dev.log
+_dev.log
+
+# Generated Cloudinary optimization/upload manifests and master files
+.cloudinary/

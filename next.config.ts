@@ -8,8 +8,11 @@ const nextConfig: NextConfig = {
     // Optimized images are derived from immutable source files in /public,
     // so a long cache TTL is safe (31 days).
     minimumCacheTTL: 2678400,
-    // When images move to Cloudflare R2 (Phase 9), allowlist the host here:
-    // remotePatterns: [{ protocol: "https", hostname: "assets.zedluxe.com" }],
+    remotePatterns: [
+      { protocol: "https", hostname: "res.cloudinary.com" },
+      // Deferred scale-up host if/when Cloudflare R2 replaces Cloudinary.
+      { protocol: "https", hostname: "assets.zedluxe.com" },
+    ],
   },
 };
 

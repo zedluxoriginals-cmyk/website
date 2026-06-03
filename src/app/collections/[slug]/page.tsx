@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
+import CollectionSwitcher from "@/components/CollectionSwitcher";
 import ShopBrowser from "@/components/shop/ShopBrowser";
 import { getAllProducts } from "@/lib/api/products";
 import { getCategories, getCategoryBySlug } from "@/lib/api/categories";
@@ -35,12 +36,19 @@ export default async function CollectionPage(
     <>
       <Header variant="solid" />
       <main className="container-zed pb-16 pt-10">
-        <div className="mb-8">
+        <div className="mb-6">
           <p className="eyebrow text-[11px] text-muted">Collection</p>
           <h1 className="mt-2 font-serif text-[40px] leading-none text-white md:text-[52px]">
             {category.title}
           </h1>
+          {category.description ? (
+            <p className="mt-3 max-w-prose text-[13px] leading-relaxed text-muted">
+              {category.description}
+            </p>
+          ) : null}
         </div>
+
+        <CollectionSwitcher categories={categories} activeSlug={slug} />
 
         <Suspense fallback={null}>
           <ShopBrowser

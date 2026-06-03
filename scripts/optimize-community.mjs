@@ -1,6 +1,6 @@
-// Optimizes HD lifestyle stills for the homepage @ZEDLUXE community strip.
+// Optimizes HD lifestyle stills for the @ZEDLUXE community strip.
 // ENFORCES an HD guard: any source under MIN_SRC_W is skipped (this strip was
-// previously full of low-res screenshot crops). Landscape 4:3 cells.
+// previously full of low-res screenshot crops). Portrait 4:5 cells (IG-style).
 import { writeFileSync, mkdirSync, existsSync } from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
@@ -10,8 +10,8 @@ const OUT = "public/assets/ig";
 mkdirSync(OUT, { recursive: true });
 
 const MIN_SRC_W = 1100; // reject anything that would upscale / look soft
-const W = 900;
-const H = Math.round((W * 3) / 4); // 4:3 → 900×675
+const W = 800;
+const H = Math.round((W * 5) / 4); // 4:5 portrait → 800×1000
 
 // Curated HD lifestyle picks (full looks / community vibe, all ≥1440w sources).
 const picks = [

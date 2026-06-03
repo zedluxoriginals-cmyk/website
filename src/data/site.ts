@@ -2,7 +2,7 @@ import type { Benefit, Category, NavLink } from "./types";
 
 export const mainNav: NavLink[] = [
   { label: "Shop", href: "/shop" },
-  { label: "Collections", href: "/collections/outerwear" },
+  { label: "Collections", href: "/collections" },
   { label: "About", href: "/about" },
   { label: "Journal", href: "/lookbook" },
 ];

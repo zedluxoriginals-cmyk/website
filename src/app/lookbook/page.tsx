@@ -8,24 +8,19 @@ import ProductGrid from "@/components/ProductGrid";
 import CommunityStrip from "@/components/CommunityStrip";
 import Newsletter from "@/components/Newsletter";
 import { lookbookStories, lookbookGallery } from "@/data/content";
-import { productBySlug } from "@/data/products";
+import { getFeaturedProducts } from "@/lib/api/products";
 
 export const metadata: Metadata = {
   title: "Lookbook",
   description: "Purpose in motion. A visual diary of modern identity — Zedluxe Originals, Summer '24.",
 };
 
-// Shop-the-look curation (links into PDPs).
-const shopTheLook = [
-  "floral-satin-jacket",
-  "classic-logo-tee",
-  "signature-tracksuit",
-  "zedluxe-essential-cap",
-  "zedluxe-mesh-jersey",
-  "zedluxe-logo-hoodie",
-].map((s) => productBySlug(s)!);
+export default async function LookbookPage() {
+  // Shop-the-look curation — live featured products (HD imagery, never stale).
+  // 6 fills exactly one row of the desktop grid (lg:grid-cols-6) and tiles
+  // cleanly on the 2-col mobile grid — no orphaned partial row.
+  const shopTheLook = await getFeaturedProducts(6);
 
-export default function LookbookPage() {
   return (
     <>
       <Header variant="solid" />
@@ -34,7 +29,7 @@ export default function LookbookPage() {
         eyebrow="Lookbook — Summer '24"
         title={"Purpose\nIn Motion."}
         body={"A visual diary of modern identity.\nZedluxe Originals — Summer '24."}
-        image="/assets/ig/striped_jacket_back.jpg"
+        image="/assets/ig/editorial-about-hero.jpg"
         imageAlt="Cinematic ZEDLUXE campaign shot"
         cta={{ label: "Explore The Collection", href: "/shop" }}
       />
@@ -91,20 +86,23 @@ export default function LookbookPage() {
         </div>
       </section>
 
-      {/* Main lookbook gallery — asymmetric */}
+      {/* Main lookbook gallery — editorial mosaic (packs clean, no gaps) */}
       <section className="container-zed pb-14">
         <SectionHeader title="The Lookbook" viewAllHref="/shop" />
-        <div className="grid auto-rows-[180px] grid-cols-2 gap-3 md:grid-cols-4">
-          {lookbookGallery.map((img) => (
+        <div className="grid auto-rows-[150px] grid-cols-2 gap-2.5 sm:auto-rows-[200px] md:grid-cols-4 md:gap-3">
+          {lookbookGallery.map((img, i) => (
             <div
               key={img.src}
-              className={`group relative overflow-hidden border border-white/[0.05] bg-charcoal-2 ${img.span}`}
+              className={`group relative overflow-hidden border border-white/[0.05] bg-charcoal-2 ${
+                // Feature tile goes full-width (2 cols × 2 rows) on mobile too.
+                i === 0 ? "col-span-2 row-span-2" : ""
+              } ${img.span}`}
             >
               <Image
                 src={img.src}
                 alt={img.alt}
                 fill
-                sizes="(max-width: 767px) 50vw, 50vw"
+                sizes="(max-width: 767px) 100vw, 50vw"
                 className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
               />
             </div>

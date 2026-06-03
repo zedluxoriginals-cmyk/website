@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "images:optimize": "node scripts/optimize-master.mjs",
+    "images:upload": "node scripts/upload-cloudinary.mjs",
+    "images:import": "node scripts/import-asset-manifest.mjs",
+    "images:pipeline": "npm run images:optimize && npm run images:upload && npm run images:import"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.3",
@@ -22,8 +26,10 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cloudinary": "^2.10.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.7",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

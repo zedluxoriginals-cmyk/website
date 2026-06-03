@@ -24,7 +24,7 @@ export default function AboutPage() {
         eyebrow="Original Pieces. ZEDLUXE."
         title={"Our Story.\nOur Standard."}
         body="ZEDLUXE ORIGINALS was built on the belief that essentials should be anything but ordinary. Rooted in culture. Driven by purpose. Made for those who stand out."
-        image="/assets/ig/striped_jacket_back.jpg"
+        image="/assets/ig/editorial-about-hero.jpg"
         imageAlt="Model wearing a statement ZEDLUXE jacket"
       />
 
@@ -81,7 +81,7 @@ export default function AboutPage() {
         <div className="container-zed grid items-center gap-10 py-0 md:grid-cols-[55%_45%]">
           <div className="relative aspect-[4/3] overflow-hidden bg-charcoal-2 md:aspect-auto md:h-[460px]">
             <Image
-              src="/assets/ig/brown_logo_tee_close_lifestyle.jpg"
+              src="/assets/ig/editorial-craft.jpg"
               alt="Close detail of ZEDLUXE craftsmanship"
               fill
               sizes="(max-width: 767px) 100vw, 55vw"

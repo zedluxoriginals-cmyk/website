@@ -19,7 +19,7 @@ export async function getCategories(): Promise<Category[]> {
   return (data ?? []).map((c) => ({
     slug: c.slug,
     title: c.name,
-    image: c.image_url ?? "/assets/ig/black_logo_tee_model.jpg",
+    image: c.image_url ?? "/assets/ig/editorial-gallery-4.jpg",
     description: c.description ?? undefined,
   }));
 }

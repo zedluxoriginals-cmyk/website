@@ -40,14 +40,14 @@ export const lookbookStories: StoryCard[] = [
     eyebrow: "City Nights",
     title: "After Dark.\nNo Rules.",
     body: "The city is your canvas. Move different.",
-    image: "/assets/ig/purple_black_sweatshirt_model.jpg",
+    image: "/assets/ig/editorial-story-1.jpg",
   },
   {
     index: "02",
     eyebrow: "Rooted",
     title: "Rooted\nIn Culture.",
     body: "Heritage in every stitch. Pride in every detail.",
-    image: "/assets/ig/brown_logo_tee_close_lifestyle.jpg",
+    image: "/assets/ig/editorial-story-2.jpg",
   },
   {
     index: "03",
@@ -58,14 +58,16 @@ export const lookbookStories: StoryCard[] = [
   },
 ];
 
-// Asymmetric editorial gallery — real IG imagery.
+// Editorial mosaic — curated lifestyle shots cropped to pack a clean 4×3 block
+// with no gaps:  [FEATURE 2x2][A][B] / [FEATURE][C wide 2x1] / [D][E][F wide 2x1]
 export const lookbookGallery: { src: string; alt: string; span: string }[] = [
-  { src: "/assets/ig/striped_jacket_back.jpg", alt: "Statement jacket from the back", span: "md:col-span-2 md:row-span-2" },
-  { src: "/assets/ig/floral_satin_jacket_product.jpg", alt: "Floral satin jacket detail", span: "md:col-span-1 md:row-span-1" },
-  { src: "/assets/ig/beige_tracksuit_model.jpg", alt: "Signature tracksuit look", span: "md:col-span-1 md:row-span-1" },
-  { src: "/assets/ig/green_white_polo_model.jpg", alt: "Mesh jersey detail", span: "md:col-span-1 md:row-span-2" },
-  { src: "/assets/ig/red_set_models.jpg", alt: "Signature red set", span: "md:col-span-2 md:row-span-1" },
-  { src: "/assets/ig/editorial-gallery-2.jpg", alt: "Street style at a city stop sign", span: "md:col-span-1 md:row-span-1" },
+  { src: "/assets/ig/lookbook-feature.jpg", alt: "ZEDLUXE statement jersey, full look", span: "md:col-span-2 md:row-span-2" },
+  { src: "/assets/ig/lookbook-a.jpg", alt: "Signature polo, seated", span: "md:col-span-1 md:row-span-1" },
+  { src: "/assets/ig/lookbook-b.jpg", alt: "Monogram tee", span: "md:col-span-1 md:row-span-1" },
+  { src: "/assets/ig/lookbook-c.jpg", alt: "Two models in ZEDLUXE sets", span: "md:col-span-2 md:row-span-1" },
+  { src: "/assets/ig/lookbook-d.jpg", alt: "ZEDLUXE logo tee", span: "md:col-span-1 md:row-span-1" },
+  { src: "/assets/ig/lookbook-e.jpg", alt: "Monogram look on location", span: "md:col-span-1 md:row-span-1" },
+  { src: "/assets/ig/lookbook-f.jpg", alt: "Monogram tee, street style", span: "md:col-span-2 md:row-span-1" },
 ];
 
 // ---------- Contact ----------
