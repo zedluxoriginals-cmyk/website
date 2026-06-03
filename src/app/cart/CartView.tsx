@@ -120,16 +120,14 @@ export default function CartView() {
           </span>
         </div>
 
-        <button
-          type="button"
-          disabled
-          title="Checkout opens once payments are connected (Phase 8)."
-          className="mt-6 w-full cursor-not-allowed bg-white/90 py-3.5 text-[11px] font-semibold uppercase tracking-label text-black opacity-80"
+        <Link
+          href="/checkout"
+          className="mt-6 block w-full bg-white py-3.5 text-center text-[11px] font-semibold uppercase tracking-label text-black transition hover:bg-off-white"
         >
-          Checkout
-        </button>
+          Proceed to checkout
+        </Link>
         <p className="mt-2 text-center text-[10px] text-soft-muted">
-          Secure checkout coming soon.
+          Secure payment via Paystack.
         </p>
 
         <Link

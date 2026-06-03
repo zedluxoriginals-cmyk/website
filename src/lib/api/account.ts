@@ -1,11 +1,5 @@
 import "server-only";
 
-/*
-  Account read layer (Phase 8). Reads the logged-in user's profile, addresses,
-  and order history. RLS guarantees a user only ever sees their own rows — these
-  queries run as the authenticated user via the SSR client.
-*/
-
 import { createClient } from "@/lib/supabase/server";
 
 export type AccountProfile = {
@@ -19,18 +13,23 @@ export type AccountOrder = {
   id: string;
   orderNumber: string;
   status: string;
+  paymentStatus: string;
   grandTotal: number;
-  createdAt: string;
+  placedAt: string;
 };
 
 export type AccountAddress = {
   id: string;
+  label: string | null;
   fullName: string;
   line1: string;
   line2: string | null;
   city: string;
   state: string | null;
   country: string;
+  phone: string | null;
+  isDefaultShipping: boolean;
+  isDefaultBilling: boolean;
 };
 
 export async function getCurrentUser() {
@@ -45,18 +44,21 @@ export async function getAccountData(): Promise<{
   addresses: AccountAddress[];
 }> {
   const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const { data: { user } } = await supabase.auth.getUser();
   if (!user) return { profile: null, orders: [], addresses: [] };
 
   const [profileRes, ordersRes, addressesRes] = await Promise.all([
     supabase.from("profiles").select("id, email, full_name, phone").eq("id", user.id).maybeSingle(),
     supabase
       .from("orders")
-      .select("id, order_number, status, grand_total, created_at")
+      .select("id, order_number, status, payment_status, grand_total, placed_at, created_at")
+      .eq("user_id", user.id)
       .order("created_at", { ascending: false }),
-    supabase.from("addresses").select("id, full_name, line1, line2, city, state, country"),
+    supabase
+      .from("addresses")
+      .select("id, label, full_name, line1, line2, city, state, country, phone, is_default_shipping, is_default_billing")
+      .eq("user_id", user.id)
+      .order("is_default_shipping", { ascending: false }),
   ]);
 
   return {
@@ -72,17 +74,22 @@ export async function getAccountData(): Promise<{
       id: o.id,
       orderNumber: o.order_number,
       status: o.status,
+      paymentStatus: o.payment_status,
       grandTotal: o.grand_total,
-      createdAt: o.created_at,
+      placedAt: o.placed_at ?? o.created_at,
     })),
     addresses: (addressesRes.data ?? []).map((a) => ({
       id: a.id,
+      label: a.label,
       fullName: a.full_name,
       line1: a.line1,
       line2: a.line2,
       city: a.city,
       state: a.state,
       country: a.country,
+      phone: a.phone,
+      isDefaultShipping: a.is_default_shipping,
+      isDefaultBilling: a.is_default_billing,
     })),
   };
 }
