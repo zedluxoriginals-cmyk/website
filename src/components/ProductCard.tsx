@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/data/types";
 import WishlistButton from "./wishlist/WishlistButton";
+import CartButton from "./CartButton";
 
 export default function ProductCard({ product }: { product: Product }) {
   return (
@@ -16,6 +17,7 @@ export default function ProductCard({ product }: { product: Product }) {
           </span>
         )}
         <WishlistButton slug={product.slug} />
+        <CartButton product={product} />
         <Image
           src={product.images[0]}
           alt={product.title}
