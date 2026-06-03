@@ -2,6 +2,7 @@
 
 import { useRef, useState, useTransition } from "react";
 import { addProductImage } from "@/app/admin/products/image-actions";
+import { compressImage } from "@/lib/admin/compress-image";
 
 /*
   Drag-and-drop photo upload. The customer-facing label never names the storage
@@ -43,7 +44,9 @@ export default function PhotoUploader({ productId }: { productId: string }) {
     try {
       for (const file of Array.from(files)) {
         if (!file.type.startsWith("image/")) continue;
-        const url = await uploadOne(file);
+        // Shrink to web size in the browser before it leaves the device.
+        const ready = await compressImage(file);
+        const url = await uploadOne(ready);
         const fd = new FormData();
         fd.append("product_id", productId);
         fd.append("url", url);
