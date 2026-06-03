@@ -38,6 +38,9 @@ export default function CartButton({ product }: { product: Product }) {
     if (singleVariant) {
       doAdd();
     } else {
+      // Pre-select first size + color so Add to bag is ready immediately.
+      if (!selectedSize && product.sizes.length > 0) setSelectedSize(product.sizes[0]);
+      if (!selectedColor && product.colors.length > 0) setSelectedColor(product.colors[0].name);
       setOpen((o) => !o);
     }
   }
@@ -103,8 +106,8 @@ export default function CartButton({ product }: { product: Product }) {
               type="button"
               onClick={(e) => { e.preventDefault(); doAdd(); }}
               disabled={
-                (product.sizes.length > 1 && !selectedSize) ||
-                (product.colors.length > 1 && !selectedColor)
+                (product.sizes.length > 0 && !selectedSize) ||
+                (product.colors.length > 0 && !selectedColor)
               }
               className="flex-1 bg-white py-2 text-[9px] font-semibold uppercase tracking-label text-black transition hover:bg-off-white disabled:cursor-not-allowed disabled:opacity-40"
             >
