@@ -1,0 +1,58 @@
+{
+  "productPaths": {
+    "classic-logo-tee": [
+      "/assets/products/classic-logo-tee-1.jpg",
+      "/assets/products/classic-logo-tee-2.jpg"
+    ],
+    "zedluxe-essential-cap": [
+      "/assets/products/zedluxe-essential-cap-1.jpg",
+      "/assets/products/zedluxe-essential-cap-2.jpg"
+    ],
+    "floral-satin-jacket": [
+      "/assets/products/floral-satin-jacket-1.jpg",
+      "/assets/products/floral-satin-jacket-2.jpg"
+    ],
+    "zedluxe-mesh-jersey": [
+      "/assets/products/zedluxe-mesh-jersey-1.jpg",
+      "/assets/products/zedluxe-mesh-jersey-2.jpg"
+    ],
+    "signature-tracksuit": [
+      "/assets/products/signature-tracksuit-1.jpg",
+      "/assets/products/signature-tracksuit-2.jpg"
+    ],
+    "minimal-logo-tee": [
+      "/assets/products/minimal-logo-tee-1.jpg"
+    ],
+    "zedluxe-logo-hoodie": [
+      "/assets/products/zedluxe-logo-hoodie-1.jpg",
+      "/assets/products/zedluxe-logo-hoodie-2.jpg"
+    ],
+    "zedluxe-track-pants": [
+      "/assets/products/zedluxe-track-pants-1.jpg",
+      "/assets/products/zedluxe-track-pants-2.jpg"
+    ],
+    "the-lost-tee-blue": [
+      "/assets/products/the-lost-tee-blue-1.jpg",
+      "/assets/products/the-lost-tee-blue-2.jpg"
+    ],
+    "signature-red-set": [
+      "/assets/products/signature-red-set-1.jpg",
+      "/assets/products/signature-red-set-2.jpg"
+    ],
+    "patterned-top": [
+      "/assets/products/patterned-top-1.jpg",
+      "/assets/products/patterned-top-2.jpg"
+    ],
+    "zedluxe-bucket-hat": [
+      "/assets/products/zedluxe-bucket-hat-1.jpg"
+    ]
+  },
+  "categoryPaths": {
+    "tees": "/assets/products/category-tees.jpg",
+    "outerwear": "/assets/products/category-outerwear.jpg",
+    "sets": "/assets/products/category-sets.jpg",
+    "accessories": "/assets/products/category-accessories.jpg",
+    "tops": "/assets/products/category-tops.jpg",
+    "bottoms": "/assets/products/category-bottoms.jpg"
+  }
+}
