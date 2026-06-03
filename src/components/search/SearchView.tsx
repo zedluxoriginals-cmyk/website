@@ -8,6 +8,7 @@
 */
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import type { Product } from "@/data/types";
 import ProductGrid from "@/components/ProductGrid";
@@ -38,6 +39,7 @@ export default function SearchView({ catalogue }: { catalogue: Product[] }) {
   const [query, setQuery] = useState(searchParams.get("q") ?? "");
 
   const results = useMemo(() => matches(catalogue, query), [catalogue, query]);
+  const searchVisuals = useMemo(() => catalogue.slice(0, 6), [catalogue]);
   const trimmed = query.trim();
 
   function update(next: string) {
@@ -80,6 +82,29 @@ export default function SearchView({ catalogue }: { catalogue: Product[] }) {
           </button>
         ))}
       </div>
+
+      {searchVisuals.length > 0 && (
+        <div className="mt-8 grid grid-cols-3 gap-2 sm:grid-cols-6">
+          {searchVisuals.map((product) => (
+            <button
+              key={product.slug}
+              type="button"
+              onClick={() => update(product.title)}
+              className="group relative aspect-[4/5] overflow-hidden border border-line bg-charcoal-2"
+              aria-label={`Search ${product.title}`}
+            >
+              <Image
+                src={product.images[0]}
+                alt={product.title}
+                fill
+                sizes="(max-width: 639px) 33vw, 16vw"
+                className="object-cover transition-transform duration-300 group-hover:scale-[1.04]"
+              />
+              <span className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent opacity-70" />
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* Results */}
       <div className="mt-10">

@@ -36,7 +36,7 @@ export default function Header({ variant = "overlay" }: { variant?: "overlay" | 
     <header
       className={
         variant === "overlay"
-          ? "absolute inset-x-0 top-[26px] z-20"
+          ? "absolute inset-x-0 top-0 z-20"
           : "sticky top-0 z-20 border-b border-line bg-black"
       }
     >

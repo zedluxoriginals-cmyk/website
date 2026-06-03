@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import BenefitsStrip from "@/components/BenefitsStrip";
 import SectionHeader from "@/components/SectionHeader";
 import ProductGrid from "@/components/ProductGrid";
 import CategoryGrid from "@/components/CategoryGrid";
@@ -29,8 +28,6 @@ export default async function Home() {
         <Header />
         <Hero />
       </div>
-
-      <BenefitsStrip />
 
       <section className="container-zed pt-11 pb-12">
         <SectionHeader title="Latest Arrivals" viewAllHref="/shop?sort=new" />

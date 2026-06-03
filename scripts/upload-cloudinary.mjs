@@ -8,13 +8,18 @@ loadEnv();
 const OPTIMIZED_MANIFEST = resolve(process.cwd(), ".cloudinary", "optimized-manifest.json");
 const UPLOAD_MANIFEST = resolve(process.cwd(), ".cloudinary", "cloudinary-upload-manifest.json");
 const CLOUDINARY_FOLDER = process.env.CLOUDINARY_FOLDER || "zedluxe";
+const CLOUD_NAME = requireEnv("NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME");
+const API_KEY = process.env.CLOUDINARY_API_KEY;
+const API_SECRET = process.env.CLOUDINARY_API_SECRET;
+const UPLOAD_PRESET = process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET;
+const HAS_SIGNED_CREDENTIALS =
+  Boolean(API_KEY && API_SECRET) && !/^<.*>$/.test(API_KEY ?? "") && !/^\*+$/.test(API_SECRET ?? "");
 
-cloudinary.config({
-  cloud_name: requireEnv("NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME"),
-  api_key: requireEnv("CLOUDINARY_API_KEY"),
-  api_secret: requireEnv("CLOUDINARY_API_SECRET"),
-  secure: true,
-});
+cloudinary.config(
+  HAS_SIGNED_CREDENTIALS
+    ? { cloud_name: CLOUD_NAME, api_key: API_KEY, api_secret: API_SECRET, secure: true }
+    : { cloud_name: CLOUD_NAME, secure: true },
+);
 
 function publicIdFor(asset) {
   return `${CLOUDINARY_FOLDER}/${asset.filePath.replace(/^assets\//, "").replace(/\.[^.]+$/, "")}`;
@@ -25,9 +30,8 @@ const uploaded = [];
 
 for (const asset of manifest.assets) {
   const publicId = publicIdFor(asset);
-  const result = await cloudinary.uploader.upload(resolve(process.cwd(), asset.masterPath), {
+  const uploadOptions = {
     public_id: publicId,
-    overwrite: true,
     resource_type: "image",
     tags: ["zedluxe", asset.sourceType, asset.productionReady ? "production-ready" : "placeholder"],
     context: {
@@ -36,7 +40,18 @@ for (const asset of manifest.assets) {
       page_context: asset.pageContext ?? "",
       section_context: asset.sectionContext ?? "",
     },
-  });
+  };
+
+  const result = HAS_SIGNED_CREDENTIALS
+    ? await cloudinary.uploader.upload(resolve(process.cwd(), asset.masterPath), {
+        ...uploadOptions,
+        overwrite: true,
+      })
+    : await cloudinary.uploader.unsigned_upload(
+        resolve(process.cwd(), asset.masterPath),
+        UPLOAD_PRESET || requireEnv("NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET"),
+        uploadOptions,
+      );
 
   uploaded.push({
     ...asset,

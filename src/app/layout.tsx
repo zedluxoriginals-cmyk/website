@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import AnnouncementBar from "@/components/AnnouncementBar";
 import Footer from "@/components/Footer";
 import { CartProvider } from "@/components/cart/CartProvider";
 import CartDrawer from "@/components/cart/CartDrawer";
@@ -74,7 +73,6 @@ export default function RootLayout({
         </a>
         <CartProvider>
           <WishlistProvider>
-            <AnnouncementBar />
             <div id="main-content" className="flex flex-1 flex-col">
               {children}
             </div>

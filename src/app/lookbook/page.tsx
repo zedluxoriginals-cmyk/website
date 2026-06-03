@@ -8,7 +8,7 @@ import ProductGrid from "@/components/ProductGrid";
 import CommunityStrip from "@/components/CommunityStrip";
 import Newsletter from "@/components/Newsletter";
 import { lookbookStories, lookbookGallery } from "@/data/content";
-import { getFeaturedProducts } from "@/lib/api/products";
+import { getAllProducts } from "@/lib/api/products";
 
 export const metadata: Metadata = {
   title: "Lookbook",
@@ -19,7 +19,17 @@ export default async function LookbookPage() {
   // Shop-the-look curation — live featured products (HD imagery, never stale).
   // 6 fills exactly one row of the desktop grid (lg:grid-cols-6) and tiles
   // cleanly on the 2-col mobile grid — no orphaned partial row.
-  const shopTheLook = await getFeaturedProducts(6);
+  const products = await getAllProducts();
+  const shopTheLook = [6, 2, 9, 4, 11, 7]
+    .map((index) => products[index])
+    .filter(Boolean)
+    .map((product) => ({
+      ...product,
+      images:
+        product.images.length > 1
+          ? [...product.images.slice(1), product.images[0]]
+          : product.images,
+    }));
 
   return (
     <>
